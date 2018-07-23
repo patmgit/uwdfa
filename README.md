@@ -1,6 +1,6 @@
 # uwdfa
 Design for America - University of Washington's website repo
 
-Viewable at <a href="students.washington.edu/uwdfa">students.washington.edu/uwdfa</a>
+Viewable at <http://www.students.washington.edu/uwdfa>
 
-In-development <a href="staff.washington.edu/pmao/dfa/index2.html">here</a>
+In-development [here](http://www.staff.washington.edu/pmao/dfa/index2.html)
