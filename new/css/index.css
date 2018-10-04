@@ -27,6 +27,69 @@ nav {
   /*grid-template-columns: repeat(4, auto);*/
 }
 
+
+/* responsive resizing media queries */
+@media screen  and (max-width: 979px) /* Tablet */ {
+  nav {
+    grid-template-columns: 3vw 1fr 3fr 4fr 3vw;
+  }
+}
+
+@media screen and (max-width: 579px) /* Mobile */ {
+  nav {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    grid-template-columns: 3vw 2fr 5fr 1fr 3vw;
+    grid-template-rows: 10vh;
+    grid-auto-rows: 90vh;
+  }
+
+  .navbar {
+    display: grid;
+    visibility: hidden;
+    opacity: 0;
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
+    background-color: var(--purple);
+    padding: 6px;
+    grid-gap: 6px;
+    transition-property: opacity, visibility;
+    transition-duration: .4s, 0s;
+    transition-delay: 0s, .4s;
+  }
+
+  .navbar li {
+    grid-row: span 1;
+  }
+
+  .navbar a {
+    color: white;
+  }
+
+  .navbar li:hover a {
+    filter: brightness(150%);
+  }
+
+  .dropbtn:hover .dropdown{
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    grid-column: 4 / 5;
+  }
+
+  .visible {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s, 0s;
+  }
+}
+
+
+
 .word {
   /*
   -webkit-text-stroke: 1px var(--gold);

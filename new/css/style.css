@@ -363,7 +363,7 @@ nav li:hover a::before {
   }
 
   .navbar li:hover a {
-    filter:brightness(150%);
+    filter: brightness(150%);
   }
 
   .dropbtn:hover .dropdown{
